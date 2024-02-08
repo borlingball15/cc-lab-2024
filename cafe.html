@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Poem</title>
+<style>
+  body {
+    background-color: black;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  .fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; color: black; }
+    100% { opacity: 1; color: white; }
+  }
+</style>
+</head>
+<body>
+<div class="fade-in" style="animation-delay: 0s; margin-bottom: 90px; padding-left: 25px;">He is quiet and so am I.</div>
+<div class="fade-in" style="animation-delay: 2s; margin-bottom: 90px; padding-left:750px;">He sips tea with lemon, while I drink coffee.</div>
+<div class="fade-in" style="animation-delay: 4s; margin-bottom: 90px; padding-left: 25px; ">That's the difference between us.</div>
+<div class="fade-in" style="animation-delay: 6s; margin-bottom: 90px; padding-left: 450px;">Like me, he wears a wide, <a href="ambiance.html" style="color: red; text-decoration: none;">striped</a> shirt,</div>
+<div class="fade-in" style="animation-delay: 8s; margin-bottom: 90px; padding-left: 25px;">and like him, I read the evening paper.</div>
+<div class="fade-in" style="animation-delay: 10s; margin-bottom: 90px; padding-left: 900px;">He doesn't see my secret glance.</div>
+<div class="fade-in" style="animation-delay: 12s; margin-bottom: 90px; padding-left: 25px">I don't see his secret glance.</div>
+</body>
+</html>

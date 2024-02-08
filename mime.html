@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mirrored Poem</title>
+<style>
+  body {
+    background-color: white;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 3;
+    position: relative;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+  .poem {
+    width: calc(50% - 50px);
+    padding: 0 25px; 
+  }
+  .fade-in {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .mirrored {
+    transform: scaleX(-1);
+    margin-right: 25px;
+  }
+  /* Styling for circles */
+  .circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .circle.left {
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .circle.right {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  /* Content inside circles */
+  .circle::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  /* Hover effect */
+  .circle:hover {
+    transform: scale(3);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="poem mirrored">
+    <div class="fade-in" style="animation-delay: 0s;" >He doesn't say to me: The sky today is clear.</div>
+    <div class="fade-in" style="animation-delay: 2s; " >He's watched and the one watching</div>
+    <div class="fade-in" style="animation-delay: 4s; " >and I'm watched and the one watching.</div>
+    <div class="fade-in" style="animation-delay: 6s; " >I move my left foot.</div>
+    <div class="fade-in" style="animation-delay: 8s; " >He moves his right foot.</div>
+    <div class="fade-in" style="animation-delay: 10s; " >I hum the melody of a song</div>
+    <div class="fade-in" style="animation-delay: 12s; " >and he hums the melody of a similar song.</div>
+    <div class="fade-in" style="animation-delay: 14s; " >I wonder: Is he the mirror in which I see myself?</div>
+    <div class="fade-in" style="animation-delay: 16s; " >And turn to look in his eyes…but I don't see him.</div>
+  </div>
+
+  <div class="poem">
+    <div class="fade-in" style="animation-delay: 0s; " >He doesn't say to me: The sky today is clear.</div>
+    <div class="fade-in" style="animation-delay: 2s; ">He's watched and the one watching</div>
+    <div class="fade-in" style="animation-delay: 4s; ">and I'm watched and the one watching.</div>
+    <div class="fade-in" style="animation-delay: 6s; ">I move my left foot.</div>
+    <div class="fade-in" style="animation-delay: 8s; ">He moves his right foot.</div>
+    <div class="fade-in" style="animation-delay: 10s; ">I hum the melody of a song</div>
+    <div class="fade-in" style="animation-delay: 12s; ">and he hums the melody of a similar song.</div>
+    <div class="fade-in" style="animation-delay: 14s; ">I wonder: Is he the mirror in which I see myself?</div>
+    <div class="fade-in" style="animation-delay: 16s;">And turn to look in his eyes…but I don't see him.</div>
+  </div>
+</div>
+
+<!-- Left Circle -->
+<a href="enigma.html" class="circle left"></a>
+
+<!-- Right Circle -->
+<a href="enigma.html" class="circle right"></a>
+
+</body>
+</html>

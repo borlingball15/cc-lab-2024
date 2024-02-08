@@ -3,10 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            text-align: center; 
+            height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+            font-size: 45em;
+            margin-bottom: 5px; /*  the margin to reduce the gap */
+            opacity: 0; /* initially set opacity to 0 */
+            animation: fadeIn 3s ease forwards; /* create fadeIn animation */
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0; /* start opacity at 0 */
+            }
+            100% {
+                opacity: 1; /* end opacity at 1 */
+            }
+        }
+
+        a {
+            font-family: 'Helvetica Neue', sans-serif;
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 0 15px; /*  the margin to add spacing between each link */
+            transition: color 0.3s; /*  transition for color change */
+        }
+
+        a:hover {
+            color: red; /* Change the color on hover */
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1>?</h1>
+    <a href="cafe.html">"The Cafe"</a>
+    <a href="ambiance.html">"The Ambiance"</a>
+    <a href="mime.html">"The Mime"</a>
+    <a href="enigma.html">"The Enigma"</a>
 </body>
 </html>
+
+
+
+
+

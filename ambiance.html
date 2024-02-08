@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hidden Poem</title>
+<style>
+  body {
+    background-color: black;
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    overflow: hidden;
+  }
+  .fade-in {
+    padding-left: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+  }
+  .fade-in::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1); 
+    z-index: -1;
+    transition: left 0.5s ease;
+  }
+  .fade-in:hover::before {
+    left: 0;
+  }
+  #cat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: auto;
+    opacity: 0.3; 
+    transition: opacity 0.5s ease;
+  }
+  #cat:hover {
+    opacity: 1; 
+  }
+</style>
+</head>
+<body>
+<div class="fade-in">He's quiet and so am I.</div>
+<div class="fade-in">He asks the waiter something.</div>
+<div class="fade-in">I ask the waiter something…</div>
+<div class="fade-in">A black cat walks between us.</div>
+<div class="fade-in">I feel the midnight of its fur</div>
+<div class="fade-in">and he feels the midnight of its fur…</div>
+<div class="fade-in">I don't say to him: The sky today is clear and blue.</div>
+
+<a href="mime.html"><img id="cat" src="black-cat.png" alt="Black Cat Image"></a>
+
+</body>
+</html>
+
+

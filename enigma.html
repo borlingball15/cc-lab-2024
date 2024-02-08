@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Red Poem</title>
+<style>
+  body {
+    background-color: darkred;
+    color: darkred;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative; /* Add position relative */
+  }
+  .poem {
+    position: relative;
+    margin-top: 50vh;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  .line {
+    margin-bottom: 40px;
+    transition: color 0.3s ease;
+  }
+  .line:hover {
+    color: white;
+  }
+  .line.black:hover {
+    color: black;
+  }
+  /* Style for the circle */
+  .circle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="poem">
+  <div class="line">I hurry from the café.</div>
+  <div class="line">I think: Maybe he's a killer…</div>
+  <div class="line">or maybe a passerby who thinks</div>
+  <div class="line black">I am a killer.</div>
+  <div class="line">He's afraid…and so am I.</div>
+</div>
+
+<a class="circle" href="index.html"></a>
+
+</body>
+</html>
